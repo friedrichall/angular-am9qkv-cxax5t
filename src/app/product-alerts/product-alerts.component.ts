@@ -9,5 +9,5 @@ import { Product } from '../products';
 export class ProductAlertsComponent {
 
   @Input() productProp !: Product;   //productProp must be of type Product and coming from parent
-  @Output() notify = new EventEmitter();
+  @Output() myNotify = new EventEmitter();
 }
