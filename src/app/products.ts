@@ -23,6 +23,12 @@ export const products = [
     name: 'Phone Standard',
     price: 299,
     description: ''
+  },
+  {
+    id: 4,
+    name: 'Samsung Galaxy S21',
+    price: 1199,
+    description: ''
   }
 ];
 
