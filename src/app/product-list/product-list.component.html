@@ -14,7 +14,10 @@
     Share
   </button>
 
-  <app-product-alerts [productProp]="myProduct"></app-product-alerts>
+  <app-product-alerts 
+    [productProp]="myProduct"
+    (notify)=onNotify()>
+  </app-product-alerts>
 </div>
 
 <!-- 
