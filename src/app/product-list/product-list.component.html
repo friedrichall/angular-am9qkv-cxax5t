@@ -1,22 +1,20 @@
 <h2>Products</h2>
 
-<div *ngFor="let product of productsImp">
+<div *ngFor="let myProduct of productsImp">
   <h3>
-    <a [title]="product.name + ' details'">
-      {{product.name}}
+    <a [title]="myProduct.name + ' details'">
+      {{myProduct.name}}
     </a>  
   </h3>
-  <p *ngIf="product.description; else elseBlock">
-    Description: {{product.description}}
+  <p *ngIf="myProduct.description; else elseBlock">
+    Description: {{myProduct.description}}
   </p>
   <ng-template #elseBlock>No Description<br><br></ng-template>
   <button type="button" (click)="share()">
     Share
   </button>
 
-  <app-product-alerts 
-    [product]="product">
-  </app-product-alerts>
+  <app-product-alerts [productProp]="myProduct"></app-product-alerts>
 </div>
 
 <!-- 
